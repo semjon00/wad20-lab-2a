@@ -2,9 +2,108 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hi</title>
+    <link href="res/images/favicon.ico" rel="icon">
+    <title>My Dashboard</title>
 </head>
 <body>
-Hello World!
+<header>
+    <strong>Welcome to your dashboard!</strong>
+</header>
+<section>
+    <div>
+        <img alt="My picture" src="res/images/me.png">
+    </div>
+    <div>
+        <ul>
+            <li>John Doe</li>
+            <li>27/06/1993</li>
+            <li>Software Engineering</li>
+        </ul>
+    </div>
+    <div>
+        <strong>2.65</strong>
+    </div>
+</section>
+<section>
+    <h1>Courses</h1>
+    <table>
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>Course Title</th>
+            <th>Semester</th>
+            <th>Grade</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        <tr>
+            <td>1</td>
+            <td>
+                <a href="https://courses.cs.ut.ee/2020/ASD/fall">Agile software development</a>
+            </td>
+            <td>Semester 1 fall</td>
+            <td>82</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>System modeling</td>
+            <td>Semester 1 spring</td>
+            <td>85</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>
+                <a href="https://courses.cs.ut.ee/2020/OOP/spring">
+                    Object-oriented programming
+                </a>
+            </td>
+            <td>Semester 2 spring</td>
+            <td>99</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Estonian language Level A2</td>
+            <td>Semester 2 fall</td>
+            <td>65</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td colspan="4">
+                <button>Add new course</button>
+            </td>
+        </tr>
+        <tr>
+            <form action="" method="post">
+                <td colspan="2">
+                    <label for="title">Title:</label>
+                    <input id="title" name="title" type="text">
+                </td>
+                <td><label for="semester">Semester:</label>
+                    <select name="semester" id="semester">
+                        <option value="1a">Year 1 fall</option>
+                        <option value="1b">Year 1 spring</option>
+                        <option value="2a">Year 2 fall</option>
+                        <option value="2b">Year 2 spring</option>
+                    </select>
+                </td>
+                <td>
+                    <input style="width: 50px" type="number" min="0" max="100" id="grade" name="grade"></td>
+            </form>
+        </tr>
+        </tfoot>
+    </table>
+</section>
+<footer>
+    <ul>
+        <li>
+            <a href="https://ois2.ut.ee/" target="_blank">OIS</a>
+        </li>
+        <li>
+            <a href="https://courses.cs.ut.ee/" target="_blank">Courses</a>
+        </li>
+    </ul>
+</footer>
 </body>
 </html>
